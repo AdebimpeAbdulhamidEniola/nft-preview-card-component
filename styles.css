@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html {
+    position: relative;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    place-content: center;
+    margin: 6em 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    width: 360px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1em;
+    border-radius: 12px;
+}
+
+div > img {
+    display: block;
+    max-width: 100%;
+}
+.main-img-container {
+    width: calc(360px - 36px);
+    height: 310px;
+
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 12px;
+}
+
+.main-img-container img{
+    width:calc(360px - 36px);
+    height: 310px;   
+
+    border-radius: 12px;
+}
+
+.main-img-container:hover,
+.main-img-container:focus {
+    cursor: pointer;
+
+    background-color:  hsl(178, 100%, 50%);
+    background-image: url('images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-img-container img:hover,
+.main-img-container img:focus {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.2em;
+}
+
+
+h3:hover,
+h3:focus {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+h3 + p {
+    color: hsl(215, 51%, 70%, .9);
+    margin-bottom: 1.2em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 1.2em;
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid  hsl(215, 32%, 27%);
+}
+
+img + span {
+    margin-left: 6px;
+}
+
+.first-info {
+    color: hsl(178, 100%, 50%);
+}
+
+.second-info{
+    color: hsl(215, 51%, 70%, .9);
+}
+
+.avatar-container {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.avatar-container img {
+    object-fit: cover;
+}
+
+.credits {
+    display: flex;
+    gap: 12px;
+
+    margin: 0.4em;
+}
+.credits span {
+    align-self: center;
+}
+
+.creation {
+    color: hsl(215, 51%, 70%, .9);
+}
+
+.author-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.author-name:hover,
+.author-name:focus {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 37vw;
+
+    font-size: 0.825rem;
+    text-decoration: none;
+}
+
+footer a {
+
+    text-decoration: none;
+}
